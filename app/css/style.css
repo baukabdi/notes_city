@@ -1,0 +1,36 @@
+/* Muller */
+@font-face {
+  font-family: "MullerRegular";
+  src: local("MullerRegular");
+  src: url("../fonts/MullerRegular/MullerRegular.eot") format("eot");
+  src: url("../fonts/MullerRegular/MullerRegular.ttf") format("ttf");
+  src: url("../fonts/MullerRegular/MullerRegular.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "MullerBold";
+  src: local("MullerBold");
+  src: url("../fonts/MullerBold/MullerBold.eot") format("eot");
+  src: url("../fonts/MullerBold/MullerBold.ttf") format("ttf");
+  src: url("../fonts/MullerBold/MullerBold.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "MullerHeavy";
+  src: local("MullerHeavy");
+  src: url("../fonts/MullerHeavy/MullerHeavy.eot") format("eot");
+  src: url("../fonts/MullerHeavy/MullerHeavy.ttf") format("ttf");
+  src: url("../fonts/MullerHeavy/MullerHeavy.woff2") format("woff2"); }
+
+/* Evolventa */
+@font-face {
+  font-family: "EvolventaRegular";
+  src: local("Evolventa");
+  src: url("../fonts/EvolventaRegular/Evolventa-Regular.eot") format("eot");
+  src: url("../fonts/EvolventaRegular/Evolventa-Regular.ttf") format("ttf");
+  src: url("../fonts/EvolventaRegular/Evolventa-Regular.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "EvolventaBold";
+  src: local("Evolventa");
+  src: url("../fonts/EvolventaBold/Evolventa-Bold.eot") format("eot");
+  src: url("../fonts/EvolventaBold/Evolventa-Bold.ttf") format("ttf");
+  src: url("../fonts/EvolventaBold/Evolventa-Bold.woff2") format("woff2"); }
