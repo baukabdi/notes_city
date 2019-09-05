@@ -1,4 +1,4 @@
-/* Muller */
+/* -------- Muller -------- */
 @font-face {
   font-family: "MullerRegular";
   src: local("MullerRegular");
@@ -20,7 +20,7 @@
   src: url("../fonts/MullerHeavy/MullerHeavy.ttf") format("ttf");
   src: url("../fonts/MullerHeavy/MullerHeavy.woff2") format("woff2"); }
 
-/* Evolventa */
+/* -------- Evolventa -------- */
 @font-face {
   font-family: "EvolventaRegular";
   src: local("Evolventa");
@@ -34,3 +34,87 @@
   src: url("../fonts/EvolventaBold/Evolventa-Bold.eot") format("eot");
   src: url("../fonts/EvolventaBold/Evolventa-Bold.ttf") format("ttf");
   src: url("../fonts/EvolventaBold/Evolventa-Bold.woff2") format("woff2"); }
+
+/********** Specifications START **********/
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: "EvolventaRegular"; }
+
+h1 {
+  font-family: "MullerBold";
+  color: #000;
+  font-size: 2.4em;
+  text-transform: uppercase;
+  font-weight: 500; }
+
+h2 {
+  font-family: "MullerBold";
+  color: #000;
+  font-size: 16px; }
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto; }
+
+/********** Specifications END **********/
+/********** Header START **********/
+.header {
+  background-image: url("../images/header-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 2em;
+  padding-bottom: 5em; }
+  .header h1 {
+    margin-top: 3em;
+    color: #fff;
+    width: 17em;
+    line-height: 1.9em; }
+  .header .mhv {
+    font-family: "MullerHeavy";
+    font-size: 1.3em;
+    background-image: -moz-linear-gradient(90deg, #c69a53 0%, #dcc43e 100%);
+    background-image: -webkit-linear-gradient(90deg, #c69a53 0%, #dcc43e 100%);
+    background-image: -ms-linear-gradient(90deg, #c69a53 0%, #dcc43e 100%);
+    padding: 0.1em;
+    color: #000; }
+  .header .header-list {
+    padding-left: 0; }
+    .header .header-list li {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 1.5em;
+      color: #fff;
+      line-height: 2em;
+      position: relative;
+      list-style-type: none;
+      padding-left: 1em; }
+      .header .header-list li span {
+        content: '';
+        display: block;
+        background-color: #f4b91b;
+        width: 0.5em;
+        height: 0.5em;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%); }
+    .header .header-list .circle {
+      color: #fff; }
+  .header .header-button {
+    background-color: #fff;
+    display: block;
+    font-family: "MullerBold";
+    text-decoration: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    max-width: 17em;
+    text-align: center;
+    padding: 1.3em 0;
+    border-radius: 0.8em;
+    color: #4e4e4e;
+    letter-spacing: 0.1em;
+    margin-top: 3em; }
+
+/********** Header END **********/
