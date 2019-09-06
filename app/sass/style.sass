@@ -5,14 +5,13 @@
 /********** Specifications START **********/
 body
 	margin: 0
-	font-size: 16px
 	font-family: $evolventa-regular
 	overflow-x: hidden
 
 h1
 	font-family: $muller-bold
 	color: #000
-	font-size: 2.4em
+	font-size: 2em
 	text-transform: uppercase
 	font-weight: 500
 
@@ -22,7 +21,7 @@ h2
 	font-size: 16px
 
 .container
-	max-width: 1170px
+	max-width: 960px
 	margin: 0 auto
 	padding-left: 1em
 	padding-right: 1em
@@ -39,6 +38,15 @@ h2
 	background-repeat: no-repeat
 	height: 100vh
 	padding-top: 2em
+
+	.header-content
+		position: relative
+		z-index: 1
+		padding-bottom: 14em
+
+	.header-wrap
+		z-index: 1
+		position: relative
 
 	h1
 		margin-top: 3em
@@ -59,7 +67,7 @@ h2
 		li
 			color: #fff
 			text-transform: uppercase
-			font-size: 1.5em
+			font-size: 1.2em
 			color: #fff
 			line-height: 2em
 			position: relative
@@ -85,7 +93,7 @@ h2
 		display: block
 		font-family: $muller-bold
 		text-decoration: none
-		font-size: 1.5em
+		font-size: 1.2em
 		text-transform: uppercase
 		max-width: 19em
 		text-align: center
@@ -122,7 +130,7 @@ h2
 	.header-right
 		position: absolute
 		right: 0
-		top: 2em
+		top: -3em
 		width: 50%
 		.girl
 			img
@@ -130,8 +138,56 @@ h2
 
 	.mouse
 		position: absolute
-		bottom: 0
+		bottom: 9em
 		left: 50%
-		transform: translateX(-50%)
-		width: 5em
+		z-index: 1
+		img
+			width: 4em
+
+.header-overlay
+	content: ''
+	display: block
+	background-image: url('../images/header-overlay.png')
+	background-position: top center
+	background-repeat: no-repeat
+	background-size: cover
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+
+.menu-static
+	position: absolute
+	bottom: -10em
+	width: 100%
+	ul
+		padding: 0
+		display: flex
+		justify-content: space-between
+		li
+			list-style-type: none
+			a
+				text-transform: uppercase
+				color: #fff
+				font-size: 1.1em
+				font-family: $muller-regular
+				text-decoration: none
+				display: block
+				position: relative
+				&:hover
+					&::after
+						width: 100%
+				&::after
+					content: ''
+					display: block
+					transition: 0.5s ease
+					width: 0
+					height: 0.1em
+					position: absolute
+					background-color: #000
+					bottom: -0.3em
+					left: 0
+					right: 0
+					margin: 0 auto
 /********** Header END **********/
