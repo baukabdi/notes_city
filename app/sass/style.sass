@@ -23,8 +23,9 @@ p
 	color: #3f3f3f
 	font-size: 2em
 	text-transform: uppercase
-	margin-top: 3em
+	padding-top: 3em
 	margin-bottom: 0.3em
+	margin-top: 0
 	font-weight: 500
 
 .container
@@ -35,6 +36,12 @@ p
 
 .relative
 	position: relative
+
+.bg-orange
+	background-color: $orange
+
+.gray-section
+	background-color: #f3f3f3
 /********** Specifications END **********/
 
 
@@ -115,7 +122,8 @@ p
 		z-index: 1
 		&:hover
 			color: #fff
-			box-shadow: 7.27px 10.777px 37.62px 19.38px rgba(37, 35, 35, 0.21)
+			box-shadow: 0 0 0 2em rgba(255, 255, 255, 0)
+			animation: pulse 1s
 			.overlay
 				width: 100%
 		.overlay
@@ -150,6 +158,13 @@ p
 		z-index: 1
 		img
 			width: 4em
+
+@keyframes pulse
+	from
+		box-shadow: 0 0 0 rgba(255, 255, 255, 0)
+	to
+		box-shadow: 0 0 0 rgba(255, 255, 255, 0)
+
 
 .header-overlay
 	content: ''
@@ -204,6 +219,7 @@ p
 .features
 	padding-bottom: 5em
 	.features-title
+		margin-bottom: 3em
 		p
 			font-size: 1.3em
 			color: #3f3f3f
@@ -211,14 +227,18 @@ p
 	.features-content__wrap
 		border: 1px solid #e4e4e4
 		padding: 5em 2em
-		margin-top: 2em
 		.features-content
 			display: flex
 			justify-content: space-between
+			margin-top: 7em
+			&:first-child
+				margin-top: 0
 			.features-content__left
 				width: 60%
 			.features-content__right
 				width: 40%
+				top: 4em
+				height: 18em
 
 		.features__content-title
 			display: flex
@@ -265,16 +285,57 @@ p
 			border-radius: 2em
 			margin-left: 3em
 			margin-top: 1em
+			position: relative
+			overflow: hidden
+			z-index: 1
+			&:hover
+				.features__content-button-overlay
+					width: 100%
+			.features__content-button-overlay
+				transition: 0.5s ease-in-out
+				content: ''
+				display: block
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				width: 0
+				height: 100%
+				margin: 0 auto
+				background-color: $orange
+				z-index: -1
 
 	.features__landing
 		.features-content__right
-			background-color: $orange
 			position: relative
 		.carousel
 			position: absolute
 			bottom: 0
 			width: 100%
 			text-align: center
+		.carousel-arrow__wrap
+			position: absolute
+			right: 1em
+			bottom: 1em
+			padding: 0
+			display: flex
+			align-items: center
+			z-index: 1
+			li
+				list-style-type: none
+				color: #fff
+			.carousel-dots
+				margin: 0 0.5em
+				font-family: $muller-bold
+				span
+					list-style-type: decimal
+			img
+				width: 1.5em
 
+	.owl-carousel 
+		.owl-item 
+			img
+				width: auto
+				margin: 0 auto
 
 /********** Features END **********/
