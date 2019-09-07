@@ -335,18 +335,43 @@ p {
     display: flex;
     align-items: center;
     z-index: 1; }
+    .features .features__landing .carousel-arrow__wrap img {
+      width: 1.2em; }
     .features .features__landing .carousel-arrow__wrap li {
       list-style-type: none;
       color: #fff; }
     .features .features__landing .carousel-arrow__wrap .carousel-dots {
-      margin: 0 0.5em;
-      font-family: "MullerBold"; }
+      padding: 0;
+      counter-reset: slides-num;
+      position: relative;
+      width: 3em;
+      margin-top: -0.2em;
+      color: #fff; }
+      .features .features__landing .carousel-arrow__wrap .carousel-dots::after {
+        content: counter(slides-num);
+        margin-left: 1em;
+        font-family: "MullerBold";
+        font-size: 0.8em; }
+      .features .features__landing .carousel-arrow__wrap .carousel-dots .owl-dot {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        counter-increment: slides-num;
+        background: none;
+        border: none;
+        color: #fff;
+        display: inline-block; }
       .features .features__landing .carousel-arrow__wrap .carousel-dots span {
-        list-style-type: decimal; }
-    .features .features__landing .carousel-arrow__wrap img {
-      width: 1.5em; }
-  .features .owl-carousel .owl-item img {
+        display: none; }
+      .features .features__landing .carousel-arrow__wrap .carousel-dots .active::before {
+        content: counter(slides-num) "/";
+        margin-left: -1em;
+        font-family: "MullerBold";
+        font-size: 0.8em; }
+  .features .features__landing .owl-carousel .owl-item img {
     width: auto;
+    height: 24em;
     margin: 0 auto; }
 
 /********** Features END **********/

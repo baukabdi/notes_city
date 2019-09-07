@@ -5,6 +5,7 @@ $(document).ready(function() {
 		owl.owlCarousel({
 			items: 1,
 			dots: true,
+			dotsSpeed: 300,
 			nav: false,
 			smartSpeed: 1000,
 			dotsContainer: '#carousel-dots',
