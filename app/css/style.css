@@ -151,6 +151,8 @@ p {
       color: #fff;
       box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
       animation: pulse 1s; }
+      .header .header-button:hover::after {
+        background-color: #fff; }
       .header .header-button:hover .overlay {
         width: 100%; }
     .header .header-button .overlay {
@@ -165,6 +167,23 @@ p {
       bottom: 0;
       margin: 0 auto;
       z-index: -1; }
+    .header .header-button::after {
+      content: '';
+      width: 15%;
+      height: 15em;
+      background-color: rgba(244, 185, 27, 0.7);
+      -webkit-animation-delay: 0.05s;
+      animation-delay: 0.05s;
+      position: absolute;
+      left: -4em;
+      top: -5em;
+      animation-timing-function: ease-in-out;
+      transition: all 0.1s;
+      animation-name: line;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      transform: rotate(35deg);
+      z-index: 0; }
   .header .header-left {
     width: 50%; }
   .header .header-right {
@@ -182,11 +201,13 @@ p {
     .header .mouse img {
       width: 4em; }
 
-@keyframes pulse {
-  from {
-    box-shadow: 0 0 0 rgba(255, 255, 255, 0); }
-  to {
-    box-shadow: 0 0 0 rgba(255, 255, 255, 0); } }
+@keyframes line {
+  0% {
+    left: -5em; }
+  30% {
+    left: 110%; }
+  100% {
+    left: 110%; } }
 
 .header-overlay {
   content: '';
@@ -249,16 +270,56 @@ p {
     padding: 5em 2em; }
     .features .features-content__wrap .features-content {
       display: flex;
-      justify-content: space-between;
-      margin-top: 7em; }
+      justify-content: space-between; }
       .features .features-content__wrap .features-content:first-child {
         margin-top: 0; }
       .features .features-content__wrap .features-content .features-content__left {
         width: 60%; }
       .features .features-content__wrap .features-content .features-content__right {
-        width: 40%;
-        top: 4em;
-        height: 18em; }
+        width: 40%; }
+      .features .features-content__wrap .features-content .carousel {
+        width: 100%; }
+        .features .features-content__wrap .features-content .carousel .carousel-arrow__wrap {
+          position: absolute;
+          bottom: 0;
+          padding: 0;
+          display: flex;
+          align-items: center;
+          z-index: 1; }
+          .features .features-content__wrap .features-content .carousel .carousel-arrow__wrap img {
+            width: 1.2em; }
+          .features .features-content__wrap .features-content .carousel .carousel-arrow__wrap li {
+            list-style-type: none;
+            color: #fff; }
+        .features .features-content__wrap .features-content .carousel .carousel-dots {
+          padding: 0;
+          counter-reset: slides-num;
+          position: relative;
+          width: 3em;
+          margin-top: -0.2em;
+          color: #fff; }
+          .features .features-content__wrap .features-content .carousel .carousel-dots::after {
+            content: counter(slides-num);
+            margin-left: 1em;
+            font-family: "MullerBold";
+            font-size: 0.8em; }
+          .features .features-content__wrap .features-content .carousel .carousel-dots .owl-dot {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            counter-increment: slides-num;
+            background: none;
+            border: none;
+            color: #fff;
+            display: inline-block; }
+          .features .features-content__wrap .features-content .carousel .carousel-dots span {
+            display: none; }
+          .features .features-content__wrap .features-content .carousel .carousel-dots .active::before {
+            content: counter(slides-num) " /";
+            margin-left: -1em;
+            font-family: "MullerBold";
+            font-size: 0.8em; }
     .features .features-content__wrap .features__content-title {
       display: flex;
       align-items: center; }
@@ -298,15 +359,20 @@ p {
       text-transform: uppercase;
       text-align: center;
       width: 12em;
-      padding: 1em 0;
+      padding: 0.5em 0;
       border-radius: 2em;
       margin-left: 3em;
       margin-top: 1em;
       position: relative;
       overflow: hidden;
-      z-index: 1; }
-      .features .features-content__wrap .features__content-button:hover .features__content-button-overlay {
-        width: 100%; }
+      z-index: 2;
+      transition: 0.3s ease;
+      border: 0.3em solid transparent; }
+      .features .features-content__wrap .features__content-button:hover {
+        font-weight: 700;
+        border: 0.3em solid #fff; }
+        .features .features-content__wrap .features__content-button:hover .features__content-button-overlay {
+          width: 100%; }
       .features .features-content__wrap .features__content-button .features__content-button-overlay {
         transition: 0.5s ease-in-out;
         content: '';
@@ -321,57 +387,53 @@ p {
         background-color: #f4b91b;
         z-index: -1; }
   .features .features__landing .features-content__right {
-    position: relative; }
+    position: relative;
+    top: 4em;
+    height: 18em; }
   .features .features__landing .carousel {
     position: absolute;
     bottom: 0;
-    width: 100%;
     text-align: center; }
-  .features .features__landing .carousel-arrow__wrap {
-    position: absolute;
-    right: 1em;
-    bottom: 1em;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    z-index: 1; }
-    .features .features__landing .carousel-arrow__wrap img {
-      width: 1.2em; }
-    .features .features__landing .carousel-arrow__wrap li {
-      list-style-type: none;
-      color: #fff; }
-    .features .features__landing .carousel-arrow__wrap .carousel-dots {
-      padding: 0;
-      counter-reset: slides-num;
-      position: relative;
-      width: 3em;
-      margin-top: -0.2em;
-      color: #fff; }
-      .features .features__landing .carousel-arrow__wrap .carousel-dots::after {
-        content: counter(slides-num);
-        margin-left: 1em;
-        font-family: "MullerBold";
-        font-size: 0.8em; }
-      .features .features__landing .carousel-arrow__wrap .carousel-dots .owl-dot {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        counter-increment: slides-num;
-        background: none;
-        border: none;
-        color: #fff;
-        display: inline-block; }
-      .features .features__landing .carousel-arrow__wrap .carousel-dots span {
-        display: none; }
-      .features .features__landing .carousel-arrow__wrap .carousel-dots .active::before {
-        content: counter(slides-num) "/";
-        margin-left: -1em;
-        font-family: "MullerBold";
-        font-size: 0.8em; }
-  .features .features__landing .owl-carousel .owl-item img {
-    width: auto;
-    height: 24em;
-    margin: 0 auto; }
+    .features .features__landing .carousel .carousel-arrow__wrap {
+      position: absolute;
+      right: 1em; }
+    .features .features__landing .carousel .owl-carousel .owl-item img {
+      width: auto;
+      height: 24em;
+      margin: 0 auto; }
+  .features .features-content__online-magazine {
+    margin-top: 16em; }
+    .features .features-content__online-magazine .features-content__left {
+      width: 50% !important; }
+    .features .features-content__online-magazine .features-content__right {
+      text-align: right;
+      margin-top: -3em; }
+      .features .features-content__online-magazine .features-content__right .features__content-title h3 {
+        margin-right: 1em; }
+      .features .features-content__online-magazine .features-content__right .features__content-list {
+        justify-content: flex-end;
+        padding-right: 5em; }
+        .features .features-content__online-magazine .features-content__right .features__content-list ul li {
+          padding-right: 1em;
+          padding-left: 0; }
+          .features .features-content__online-magazine .features-content__right .features__content-list ul li span {
+            left: auto;
+            right: 0; }
+      .features .features-content__online-magazine .features-content__right .features__content-button {
+        margin-left: auto;
+        margin-right: 5em; }
+    .features .features-content__online-magazine .bg-orange {
+      height: 21em; }
+    .features .features-content__online-magazine .carousel {
+      position: absolute;
+      bottom: 0; }
+      .features .features-content__online-magazine .carousel .carousel-arrow__wrap {
+        left: 1em; }
+      .features .features-content__online-magazine .carousel .carousel-dots::after {
+        margin-left: 2.2em !important; }
+    .features .features-content__online-magazine .owl-carousel .owl-item img {
+      width: auto;
+      height: 30em;
+      margin: 0 auto; }
 
 /********** Features END **********/
