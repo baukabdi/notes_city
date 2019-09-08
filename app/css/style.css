@@ -76,6 +76,12 @@ p {
 .gray-section {
   background-color: #f3f3f3; }
 
+.ml-0-2 {
+  margin-left: 0.2em; }
+
+.mr-0-2 {
+  margin-right: 0.2em; }
+
 /********** Specifications END **********/
 /********** Header START **********/
 .header {
@@ -226,7 +232,12 @@ p {
   position: absolute;
   bottom: -10em;
   width: 100%; }
+  .menu-static .menu-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
   .menu-static ul {
+    width: 100%;
     padding: 0;
     display: flex;
     justify-content: space-between; }
@@ -255,6 +266,19 @@ p {
           left: 0;
           right: 0;
           margin: 0 auto; }
+
+.menu-dynamic {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 10em;
+  background-image: -moz-linear-gradient(128deg, #f4b91b 0%, #ffba00 100%);
+  background-image: -webkit-linear-gradient(128deg, #f4b91b 0%, #ffba00 100%);
+  background-image: -ms-linear-gradient(128deg, #f4b91b 0%, #ffba00 100%); }
+  .menu-dynamic .menu-inner {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); }
 
 /********** Header END **********/
 /********** Features START **********/
@@ -408,8 +432,6 @@ p {
     .features .features-content__online-magazine .features-content__right {
       text-align: right;
       margin-top: -3em; }
-      .features .features-content__online-magazine .features-content__right .features__content-title h3 {
-        margin-right: 1em; }
       .features .features-content__online-magazine .features-content__right .features__content-list {
         justify-content: flex-end;
         padding-right: 5em; }
@@ -435,5 +457,18 @@ p {
       width: auto;
       height: 30em;
       margin: 0 auto; }
+  .features .features-content__cashback {
+    margin-top: 25em; }
+    .features .features-content__cashback .owl-carousel .owl-item img {
+      margin: 0 auto;
+      width: auto;
+      height: 30em; }
+    .features .features-content__cashback .carousel {
+      position: absolute;
+      bottom: 0; }
+    .features .features-content__cashback .carousel-arrow__wrap {
+      right: 1em; }
+    .features .features-content__cashback .carousel-dots::after {
+      margin-left: 2.2em !important; }
 
 /********** Features END **********/
