@@ -7,14 +7,37 @@
 
 	<title>Notes City</title>
 
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsive.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	
 	<header id="header" class="header">
+	<!-- Request form START -->
+	<div class="request-form__wrap" id="request-form__wrap">
+		<form id="request-form">
+			<div class="request-form__logo">
+				<img src="images/logo-white.png" alt="">
+			</div>
+			<div class="request-form__input">
+				<input type="text" name="Имя" placeholder="Имя" id="">
+			</div>
+			<div class="request-form__input">
+				<input type="text" name="Телефон" placeholder="Телефон" id="">
+			</div>
+			<div class="request-form__button">
+				<button>
+					<span class="overlay"></span>
+					Отправить
+				</button>
+			</div>
+		</form>
+	</div>
+	<!-- Request form END -->
+
 		<div class="header-content">
 			<div class="container">
 
@@ -37,7 +60,7 @@
 							<li><span class="circle"></span>Рассрочка</li>
 						</ul>
 
-						<a class="header-button" href="#">
+						<a class="header-button" href="#" data-fancybox data-src="#request-form__wrap">
 							<span class="overlay"></span>
 							Заказать звонок
 						</a>
@@ -111,7 +134,7 @@
 								</ul>
 							</div>
 
-							<a href="#" class="features__content-button">
+							<a href="#" class="features__content-button" data-fancybox data-src="#request-form__wrap">
 								<span class="features__content-button-overlay"></span>
 								Оставить заявку
 							</a>
@@ -198,7 +221,7 @@
 								</ul>
 							</div>
 
-							<a href="#" class="features__content-button">
+							<a href="#" class="features__content-button" data-fancybox data-src="#request-form__wrap">
 								<span class="features__content-button-overlay"></span>
 								Оставить заявку
 							</a>
@@ -222,7 +245,7 @@
 								</ul>
 							</div>
 
-							<a href="#" class="features__content-button">
+							<a href="#" class="features__content-button" data-fancybox data-src="#request-form__wrap">
 								<span class="features__content-button-overlay"></span>
 								Оставить заявку
 							</a>
@@ -288,7 +311,7 @@
 								</ul>
 							</div>
 
-							<a href="#" class="features__content-button">
+							<a href="#" class="features__content-button" data-fancybox data-src="#request-form__wrap">
 								<span class="features__content-button-overlay"></span>
 								Оставить заявку
 							</a>
@@ -312,7 +335,7 @@
 								</ul>
 							</div>
 
-							<a href="#" class="features__content-button">
+							<a href="#" class="features__content-button" data-fancybox data-src="#request-form__wrap">
 								<span class="features__content-button-overlay"></span>
 								Оставить заявку
 							</a>
@@ -386,7 +409,7 @@
 					<p>посмотрите минутный ролик и все поймете</p>
 				</div>
 
-				<a href="#" class="how-works__video" style="background-image: url(images/video.png);">
+				<a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox class="how-works__video" style="background-image: url(images/video.png);">
 					<span class="play-button"><img src="images/play-button.png" alt=""></span>
 				</a>
 
@@ -426,6 +449,7 @@
 	</div>
 
 	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
