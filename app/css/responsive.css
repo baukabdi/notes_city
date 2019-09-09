@@ -12,7 +12,9 @@
 
 @media (max-width: 1400px) {
   body {
-    font-size: 12px !important; } }
+    font-size: 12px !important; }
+  .header {
+    height: auto; } }
 
 @media (max-width: 1350px) {
   body {
