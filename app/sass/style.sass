@@ -285,6 +285,8 @@ p
 				width: 40%
 			.carousel
 				width: 100%
+				position: absolute
+				bottom: 0
 				.carousel-arrow__wrap
 					position: absolute
 					bottom: 0
@@ -306,7 +308,7 @@ p
 					color: #fff
 					&::after
 						content: counter(slides-num)
-						margin-left: 1em
+						margin-left: 2.2em
 						font-family: $muller-bold
 						font-size: 0.8em
 					.owl-dot
@@ -403,10 +405,6 @@ p
 			position: relative
 			top: 4em
 			height: 18em
-		.carousel
-			position: absolute
-			bottom: 0
-			text-align: center
 			.carousel-arrow__wrap
 				position: absolute
 				right: 1em
@@ -438,9 +436,6 @@ p
 				margin-right: 5em
 		.bg-orange
 			height: 21em
-		.carousel
-			position: absolute
-			bottom: 0
 			.carousel-arrow__wrap
 				left: 1em
 			.carousel-dots
@@ -454,7 +449,7 @@ p
 
 
 	.features-content__cashback
-		margin-top: 25em
+		margin-top: 15em
 		.owl-carousel 
 			.owl-item
 				img
@@ -462,11 +457,56 @@ p
 					width: auto
 					height: 30em
 
-		.carousel
-			position: absolute
-			bottom: 0
 		.carousel-arrow__wrap
 			right: 1em
 		.carousel-dots::after
 			margin-left: 2.2em !important
+
+		.features__content-button
+			margin-top: 2em
+
+		.features-content__right 
+			height: 23em
+
+	.features-content__catalog
+		text-align: right
+		margin-top: 15em
+		.features-content__left
+			width: 50% !important
+		.features__content-list
+			.rectangle
+				right: -1em
+				left: auto !important
+		.features__content-button
+			margin-left: auto
+		.carousel-dots::after
+			margin-right: 0.5em
+		.carousel-arrow__wrap
+			left: 1em
+		.owl-carousel 
+			.owl-item
+				img
+					width: auto
+					height: 22em
+					margin: 0 auto
+		.carousel-item
+			margin-bottom: 3em
+
+
+
+	.features-content__online-recording
+		margin-top: 15em
+		.carousel-arrow__wrap
+			right: 1em
+			left: auto
+		.features-content__right
+			width: 50% !important
+		.owl-carousel 
+			.owl-item
+				img
+					width: auto
+					height: 22em
+					margin: 0 auto
+		.carousel-item
+			margin-bottom: 3em
 /********** Features END **********/

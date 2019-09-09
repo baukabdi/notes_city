@@ -21,7 +21,9 @@ $(document).ready(function() {
 
 	// Landing owl carousel START
 	$(function() {
-		var owl = $('.features__landing .carousel__wrap');
+		var owl = $(
+			'.features__landing .carousel__wrap'
+			);
 		owl.owlCarousel({
 			items: 1,
 			dots: true,
@@ -44,6 +46,7 @@ $(document).ready(function() {
     })
 	})
 	// Landing owl carousel END
+
 
 	// Online magazin owl carousel START
 	$(function() {
@@ -96,5 +99,57 @@ $(document).ready(function() {
     })
 	})
 	// Cashback owl carousel END
+
+	// Catalog owl carousel START
+	$(function() {
+		var owl = $('.features-content__catalog .carousel__wrap');
+		owl.owlCarousel({
+			items: 1,
+			dots: true,
+			dotsSpeed: 300,
+			nav: false,
+			smartSpeed: 1000,
+			dotsContainer: '#carousel-dots-catalog',
+		});
+
+		// next carousel
+    $('.features-content__catalog .carousel-arrow__right').click(function(e) {
+      e.preventDefault();
+      owl.trigger('next.owl.carousel');
+    })
+
+    // prev carousel
+    $('.features-content__catalog .carousel-arrow__left').click(function(e) {
+      e.preventDefault();
+      owl.trigger('prev.owl.carousel', [300]);
+    })
+	})
+	// Catalog owl carousel END
+
+	// Online recording owl carousel START
+	$(function() {
+		var owl = $('.features-content__online-recording .carousel__wrap');
+		owl.owlCarousel({
+			items: 1,
+			dots: true,
+			dotsSpeed: 300,
+			nav: false,
+			smartSpeed: 1000,
+			dotsContainer: '#carousel-dots-online-recording',
+		});
+
+		// next carousel
+    $('.features-content__online-recording .carousel-arrow__right').click(function(e) {
+      e.preventDefault();
+      owl.trigger('next.owl.carousel');
+    })
+
+    // prev carousel
+    $('.features-content__online-recording .carousel-arrow__left').click(function(e) {
+      e.preventDefault();
+      owl.trigger('prev.owl.carousel', [300]);
+    })
+	})
+	// Online recording owl carousel END
 	
 });

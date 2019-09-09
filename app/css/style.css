@@ -302,7 +302,9 @@ p {
       .features .features-content__wrap .features-content .features-content__right {
         width: 40%; }
       .features .features-content__wrap .features-content .carousel {
-        width: 100%; }
+        width: 100%;
+        position: absolute;
+        bottom: 0; }
         .features .features-content__wrap .features-content .carousel .carousel-arrow__wrap {
           position: absolute;
           bottom: 0;
@@ -324,7 +326,7 @@ p {
           color: #fff; }
           .features .features-content__wrap .features-content .carousel .carousel-dots::after {
             content: counter(slides-num);
-            margin-left: 1em;
+            margin-left: 2.2em;
             font-family: "MullerBold";
             font-size: 0.8em; }
           .features .features-content__wrap .features-content .carousel .carousel-dots .owl-dot {
@@ -414,14 +416,10 @@ p {
     position: relative;
     top: 4em;
     height: 18em; }
-  .features .features__landing .carousel {
-    position: absolute;
-    bottom: 0;
-    text-align: center; }
-    .features .features__landing .carousel .carousel-arrow__wrap {
+    .features .features__landing .features-content__right .carousel-arrow__wrap {
       position: absolute;
       right: 1em; }
-    .features .features__landing .carousel .owl-carousel .owl-item img {
+    .features .features__landing .features-content__right .owl-carousel .owl-item img {
       width: auto;
       height: 24em;
       margin: 0 auto; }
@@ -446,29 +444,60 @@ p {
         margin-right: 5em; }
     .features .features-content__online-magazine .bg-orange {
       height: 21em; }
-    .features .features-content__online-magazine .carousel {
-      position: absolute;
-      bottom: 0; }
-      .features .features-content__online-magazine .carousel .carousel-arrow__wrap {
+      .features .features-content__online-magazine .bg-orange .carousel-arrow__wrap {
         left: 1em; }
-      .features .features-content__online-magazine .carousel .carousel-dots::after {
+      .features .features-content__online-magazine .bg-orange .carousel-dots::after {
         margin-left: 2.2em !important; }
     .features .features-content__online-magazine .owl-carousel .owl-item img {
       width: auto;
       height: 30em;
       margin: 0 auto; }
   .features .features-content__cashback {
-    margin-top: 25em; }
+    margin-top: 15em; }
     .features .features-content__cashback .owl-carousel .owl-item img {
       margin: 0 auto;
       width: auto;
       height: 30em; }
-    .features .features-content__cashback .carousel {
-      position: absolute;
-      bottom: 0; }
     .features .features-content__cashback .carousel-arrow__wrap {
       right: 1em; }
     .features .features-content__cashback .carousel-dots::after {
       margin-left: 2.2em !important; }
+    .features .features-content__cashback .features__content-button {
+      margin-top: 2em; }
+    .features .features-content__cashback .features-content__right {
+      height: 23em; }
+  .features .features-content__catalog {
+    text-align: right;
+    margin-top: 15em; }
+    .features .features-content__catalog .features-content__left {
+      width: 50% !important; }
+    .features .features-content__catalog .features__content-list .rectangle {
+      right: -1em;
+      left: auto !important; }
+    .features .features-content__catalog .features__content-button {
+      margin-left: auto; }
+    .features .features-content__catalog .carousel-dots::after {
+      margin-right: 0.5em; }
+    .features .features-content__catalog .carousel-arrow__wrap {
+      left: 1em; }
+    .features .features-content__catalog .owl-carousel .owl-item img {
+      width: auto;
+      height: 22em;
+      margin: 0 auto; }
+    .features .features-content__catalog .carousel-item {
+      margin-bottom: 3em; }
+  .features .features-content__online-recording {
+    margin-top: 15em; }
+    .features .features-content__online-recording .carousel-arrow__wrap {
+      right: 1em;
+      left: auto; }
+    .features .features-content__online-recording .features-content__right {
+      width: 50% !important; }
+    .features .features-content__online-recording .owl-carousel .owl-item img {
+      width: auto;
+      height: 22em;
+      margin: 0 auto; }
+    .features .features-content__online-recording .carousel-item {
+      margin-bottom: 3em; }
 
 /********** Features END **********/
