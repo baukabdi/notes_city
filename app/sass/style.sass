@@ -129,6 +129,35 @@ p
 /********** Request form END **********/
 
 
+/********** Scroll up START **********/
+.scroll-up
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	position: fixed
+	right: -100%
+	bottom: 5em
+	box-shadow: 2.237px 3.316px 7.68px 0.32px rgba(0, 0, 0, 0.18)
+	background-color: #fff
+	width: 4em
+	height: 4em
+	border-radius: 50%
+	z-index: 9999
+	border: 2px solid $orange
+	transition: 1s ease
+	right: 4em
+	transform: translateX(200%)
+	&:hover
+		background-color: darken(#fff, 5)
+	img
+		width: 30%
+
+.scroll-up__active
+	transform: none
+/********** Scroll up START **********/
+
+
 /********** Header START **********/
 .header
 	background-image: url('../images/header-bg.png')

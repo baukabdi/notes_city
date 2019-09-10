@@ -8,6 +8,23 @@ $(document).ready(function() {
 		return false;
 	});
 
+	$(window).on('scroll', function() {
+		var top = $(document).scrollTop();
+		if (top > 1500) {
+			$('.scroll-up').addClass('scroll-up__active');
+		}
+		else {
+			$('.scroll-up').removeClass('scroll-up__active');
+		}
+	});
+
+	$('body').on('click', '.scroll-up', function(e) {
+		e.preventDefault();
+		$('body, html').animate({
+			scrollTop: 0
+		}, 800);
+	});
+
 	// Header dynamic START
 	$(window).on('scroll', function() {
 		var top = $(document).scrollTop();
