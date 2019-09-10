@@ -8,16 +8,28 @@ $(document).ready(function() {
 		return false;
 	});
 
-	/* $(window).on('scroll', function() {
-		headerHeight = $('.header').height();
-		if ( $(window).scrollTop() > headerHeight ) {
-			$('.menu-static').addClass('menu-dynamic');
+	// Header dynamic START
+	$(window).on('scroll', function() {
+		var top = $(document).scrollTop();
+		var headerHeight = $('.header').height();
+		var menu = $('.menu-static');
+
+		if (top < headerHeight) {
+			setTimeout( () => {
+				menu.removeClass('menu-dynamic');
+			}, 50 );
+			menu.removeClass('t-0');
 		}
 		else {
-			$('.menu-static').removeClass('menu-dynamic');
+			$('.menu-static').addClass('menu-dynamic');
+			setTimeout( () => {
+				menu.addClass('t-0');
+			}, 10 );
 		}
-		console.log( $(window).scrollTop() );
-	}) */
+		
+	});
+	// Header dynamic END
+
 
 	// Landing owl carousel START
 	$(function() {

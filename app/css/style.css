@@ -61,6 +61,9 @@ p {
   margin-top: 0;
   font-weight: 500; }
 
+.h-100 {
+  height: 100%; }
+
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -86,10 +89,13 @@ p {
 .mr-0-2 {
   margin-right: 0.2em; }
 
+.t-0 {
+  top: 0 !important; }
+
 /********** Specifications END **********/
 /********** Request form START **********/
 .request-form__wrap {
-  background-color: #f4b91b;
+  background-color: #e8ab0e;
   width: 24%;
   padding: 2em;
   margin: 0 auto;
@@ -103,7 +109,7 @@ p {
   .request-form__wrap .request-form__logo {
     margin-bottom: 3em; }
     .request-form__wrap .request-form__logo img {
-      width: 15em; }
+      width: 12em; }
   .request-form__wrap .request-form__input {
     margin-bottom: 3em;
     border-bottom: 1px solid #fff;
@@ -147,8 +153,7 @@ p {
       background-color: #f4b91b;
       z-index: -1; }
   .request-form__wrap .fancybox-slide--html .fancybox-close-small {
-    width: 4em;
-    height: 4em; }
+    width: 5em; }
   .request-form__wrap .fancybox-button svg {
     color: #fff;
     font-size: 2em; }
@@ -159,7 +164,6 @@ p {
   background-image: url("../images/header-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
   padding-top: 2em; }
   .header .header-content {
     position: relative;
@@ -315,7 +319,11 @@ p {
 .menu-static {
   position: absolute;
   bottom: -10em;
-  width: 100%; }
+  top: auto;
+  width: 100%;
+  transition: 0.5s; }
+  .menu-static .logo-white {
+    display: none; }
   .menu-static .menu-inner {
     display: flex;
     align-items: center;
@@ -353,16 +361,27 @@ p {
 
 .menu-dynamic {
   position: fixed;
-  top: 0;
+  top: -100%;
   left: 0;
-  height: 10em;
-  background-image: -moz-linear-gradient(128deg, #f4b91b 0%, #ffba00 100%);
-  background-image: -webkit-linear-gradient(128deg, #f4b91b 0%, #ffba00 100%);
-  background-image: -ms-linear-gradient(128deg, #f4b91b 0%, #ffba00 100%); }
+  height: 8em;
+  background-color: #f4ba18;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  box-shadow: 2.237px 3.316px 7.68px 0.32px rgba(0, 0, 0, 0.18);
+  z-index: 999; }
+  .menu-dynamic .logo-white {
+    display: block;
+    margin-right: 3em; }
+    .menu-dynamic .logo-white img {
+      width: 15em; }
   .menu-dynamic .menu-inner {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%); }
+    transform: translateX(-50%);
+    height: 100%;
+    width: 100%; }
+  .menu-dynamic ul li a::after {
+    background-color: #fff; }
 
 /********** Header END **********/
 /********** Features START **********/
@@ -382,9 +401,11 @@ p {
       .features .features-content__wrap .features-content:first-child {
         margin-top: 0; }
       .features .features-content__wrap .features-content .features-content__left {
-        width: 60%; }
+        width: 60%;
+        z-index: 0; }
       .features .features-content__wrap .features-content .features-content__right {
-        width: 40%; }
+        width: 40%;
+        z-index: 0; }
       .features .features-content__wrap .features-content .carousel {
         width: 100%;
         position: absolute;
@@ -556,13 +577,15 @@ p {
     .features .features-content__catalog .features-content__left {
       width: 50% !important; }
     .features .features-content__catalog .features__content-list ul {
-      padding-left: 0; }
+      padding-left: 0;
+      margin-left: auto;
+      margin-right: 5em; }
     .features .features-content__catalog .features__content-list .rectangle {
       right: -1em;
       left: auto !important; }
     .features .features-content__catalog .features__content-button {
       margin-left: auto;
-      margin-right: 5em; }
+      margin-right: 4em; }
     .features .features-content__catalog .carousel-dots::after {
       margin-right: 0.5em; }
     .features .features-content__catalog .carousel-arrow__wrap {
@@ -607,7 +630,7 @@ p {
   position: relative;
   overflow: hidden;
   transition: 0.5s ease;
-  z-index: 2; }
+  z-index: 0; }
   .to-get__btn:hover {
     color: #f4b91b;
     box-shadow: 3.914px 5.803px 14.72px 1.28px rgba(0, 0, 0, 0.25); }
