@@ -1,3 +1,4 @@
+/************** Max START **************/
 @media (max-width: 1600px) {
   body {
     font-size: 16px !important; } }
@@ -40,6 +41,10 @@
   .container {
     max-width: 540px !important; } }
 
+/************** Max END **************/
+/************** Min START **************/
 @media (min-width: 1400px) {
   .container {
     max-width: 1200px !important; } }
+
+/************** Min END **************/
