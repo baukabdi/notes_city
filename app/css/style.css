@@ -632,6 +632,8 @@ p {
     margin-top: 15em; }
     .features .features-content__catalog .features-content__left {
       width: 50% !important; }
+    .features .features-content__catalog .bg-orange {
+      height: 21em; }
     .features .features-content__catalog .features__content-list ul {
       padding-left: 0;
       margin-left: auto;
@@ -659,6 +661,8 @@ p {
       left: auto; }
     .features .features-content__online-recording .features-content__right {
       width: 50% !important; }
+    .features .features-content__online-recording .bg-orange {
+      height: 21em; }
     .features .features-content__online-recording .owl-carousel .owl-item img {
       width: auto;
       height: 22em;

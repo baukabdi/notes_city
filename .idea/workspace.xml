@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4ab9dfb-68bd-4126-85a9-28e3f333e427" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/responsive.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/sass/responsive.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/sass/responsive.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/sass/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/sass/style.sass" afterDir="false" />
     </list>
@@ -28,14 +27,14 @@
         <counts>
           <entry key="html" value="108" />
           <entry key="js" value="1127" />
-          <entry key="sass" value="947" />
+          <entry key="sass" value="1191" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="108" />
           <entry key="JavaScript" value="1127" />
-          <entry key="Sass" value="947" />
+          <entry key="Sass" value="1191" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -65,20 +64,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/sass/style.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="337" column="20" selection-start-line="337" selection-start-column="20" selection-end-line="337" selection-end-column="20" />
+            <state relative-caret-position="192">
+              <caret line="647" column="4" selection-start-line="647" selection-start-column="4" selection-end-line="647" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/sass/responsive.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="79" column="18" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
+            <state relative-caret-position="511">
+              <caret line="136" column="21" selection-start-line="136" selection-start-column="21" selection-end-line="136" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -116,6 +115,9 @@
       <find>hamburg</find>
       <find>logo</find>
       <find>hamburger</find>
+      <find>online-rec</find>
+      <find>features-content__online-magazine</find>
+      <find>catalog</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -125,9 +127,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/js/script.js" />
-        <option value="$PROJECT_DIR$/app/sass/responsive.sass" />
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/sass/style.sass" />
+        <option value="$PROJECT_DIR$/app/sass/responsive.sass" />
       </list>
     </option>
   </component>
@@ -190,7 +192,7 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -285,12 +287,21 @@
       <option name="presentableId" value="Default" />
       <updated>1568177651664</updated>
       <workItem from="1568177656673" duration="8873000" />
-      <workItem from="1568194571277" duration="6323000" />
+      <workItem from="1568194571277" duration="8143000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15196000" />
+    <option name="totallyTimeSpent" value="17016000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -307,7 +318,7 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3295082" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
@@ -346,13 +357,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/sass/responsive.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="79" column="18" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -362,8 +366,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/sass/style.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="337" column="20" selection-start-line="337" selection-start-column="20" selection-end-line="337" selection-end-column="20" />
+        <state relative-caret-position="192">
+          <caret line="647" column="4" selection-start-line="647" selection-start-column="4" selection-end-line="647" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/sass/responsive.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="136" column="21" selection-start-line="136" selection-start-column="21" selection-end-line="136" selection-end-column="21" />
         </state>
       </provider>
     </entry>
