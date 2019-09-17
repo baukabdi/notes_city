@@ -1,8 +1,4 @@
 /************** Max START **************/
-@media (max-width: 1500px) {
-  body {
-    font-size: 14px !important; } }
-
 @media (max-width: 1450px) {
   body {
     font-size: 12px !important; } }
@@ -96,11 +92,16 @@
     margin-right: 0 !important;
     margin-left: 3em !important; }
   .features .features-content__wrap .features__content-list {
-    justify-content: flex-start !important; }
-    .features .features-content__wrap .features__content-list ul .rectangle {
-      left: 0 !important; }
-    .features .features-content__wrap .features__content-list ul li {
-      padding-left: 1em !important; }
+    justify-content: flex-start !important;
+    padding-right: 0 !important; }
+    .features .features-content__wrap .features__content-list ul {
+      margin-right: 0 !important;
+      margin-left: 0 !important;
+      padding-left: 3em !important; }
+      .features .features-content__wrap .features__content-list ul .rectangle {
+        left: 0 !important; }
+      .features .features-content__wrap .features__content-list ul li {
+        padding-left: 1em !important; }
   .features .features-content__wrap .features-content__cashback,
   .features .features-content__wrap .features-content__catalog,
   .features .features-content__wrap .features-content__online-recording {
@@ -117,6 +118,8 @@
 /************** Max END **************/
 /************** Min START **************/
 @media (min-width: 1400px) {
+  body {
+    font-size: 14px !important; }
   .container {
     max-width: 1200px !important; } }
 

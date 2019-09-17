@@ -35,7 +35,7 @@
         <input type="text" name="Имя" placeholder="Имя" id="">
       </div>
       <div class="request-form__input">
-        <input type="text" name="Телефон" placeholder="Телефон" id="">
+        <input class="phone_us" type="text" name="Телефон" placeholder="Телефон" id="">
       </div>
       <div class="request-form__button">
         <button>
@@ -91,6 +91,19 @@
     <!----------------- Menu static START ----------------->
     <div class="relative">
       <div class="menu-static">
+        <div class="container relative h-100">
+          <div class="menu-inner">
+            <ul>
+              <li><a href="#">Как это работает</a></li>
+              <li><a href="#">Партнерам</a></li>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-dynamic">
         <div class="container relative h-100">
           <div class="menu-inner">
             <div class="logo-white">
@@ -399,7 +412,7 @@
         </div>
         <!----------------- Online recording END ----------------->
 
-        <a class="to-get__btn" href="#">
+        <a class="to-get__btn" href="#" data-fancybox="" data-src="#request-form__wrap">
           <span class="to-get-btn__overlay"></span>
           Приобрести
         </a>
@@ -443,7 +456,7 @@
         <span class="play-button"><img src="images/play-button.png" alt=""></span>
       </a>
 
-      <a class="to-get__btn" href="#">
+      <a class="to-get__btn" href="#" data-fancybox="" data-src="#request-form__wrap">
         <span class="to-get-btn__overlay"></span>
         Приобрести
       </a>
@@ -482,6 +495,7 @@
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/script.js"></script>
 </body>

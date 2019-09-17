@@ -58,13 +58,15 @@ p
 
 .t-0
   top: 0 !important
+
+.trf-none
+	transform: none !important
 /********** Specifications END **********/
 
 
 /********** Request form START **********/
 .request-form__wrap
   background-color: #e8ab0e
-  width: 24%
   padding: 2em
   margin: 0 auto
   left: 0
@@ -74,6 +76,7 @@ p
   transform: translateY(-50%)
   z-index: 999
   display: none
+  max-width: 26em
   .request-form__logo
     margin-bottom: 3em
     img
@@ -132,7 +135,7 @@ p
 /********** Request form END **********/
 
 
-/********** Scroll up START **********/
+/********** Callback START **********/
 .scroll-up
   display: flex
   flex-direction: column
@@ -140,8 +143,8 @@ p
   justify-content: center
   box-shadow: 2.237px 3.316px 7.68px 0.32px rgba(0, 0, 0, 0.18)
   background-color: #fff
-  width: 4em
-  height: 4em
+  width: 3em
+  height: 3em
   border-radius: 50%
   z-index: 9999
   border: 2px solid $orange
@@ -153,16 +156,12 @@ p
     width: 30%
 
 .scroll-up__wrap
-  transform: translateX(200%)
   transition: 1s ease
   position: fixed
   bottom: 5em
   right: 3em
   z-index: 9
-
-.scroll-up__active
-  transform: none
-/********** Scroll up START **********/
+/********** Callback START **********/
 
 
 /********** Header START **********/
@@ -365,7 +364,7 @@ p
   bottom: -10em
   top: auto
   width: 100%
-  transition: 0.5s
+  transition: 2s
   .logo-white
     display: none
   .menu-inner
@@ -406,14 +405,17 @@ p
 
 .menu-dynamic
   position: fixed
-  top: -100%
+  top: 0
   left: 0
+  width: 100%
   height: 7em
   background-color: #f4ba18
   border-bottom-left-radius: 1em
   border-bottom-right-radius: 1em
   box-shadow: 2.237px 3.316px 7.68px 0.32px rgba(0, 0, 0, 0.18)
   z-index: 999
+  transition: 1s ease
+  transform: translateY(-100%)
   .logo-white
     display: block
     margin-right: 3em
@@ -425,11 +427,38 @@ p
     transform: translateX(-50%)
     height: 100%
     width: 100%
+    display: flex
+    align-items: center
   ul
-    li
-      a
-        &::after
-          background-color: #fff
+  	display: flex
+  	width: 100%
+  	justify-content: space-between
+		li
+			list-style-type: none
+			a
+				text-transform: uppercase
+				color: #fff
+				font-size: 1.1em
+				font-family: $muller-regular
+				text-decoration: none
+				display: block
+				position: relative
+				letter-spacing: 0.2em
+				&:hover
+					&::after
+						width: 100%
+				&::after
+					content: ''
+					display: block
+					transition: 0.5s ease
+					width: 0
+					height: 0.1em
+					position: absolute
+					background-color: #fff
+					bottom: -0.3em
+					left: 0
+					right: 0
+					margin: 0 auto
 /********** Header END **********/
 
 /********** Features START **********/
@@ -815,7 +844,7 @@ p
   .how-works__video
     max-width: 36em
     height: 20em
-    background-size: contain
+    background-size: 100% 100%
     background-repeat: no-repeat
     margin: 5em auto
     display: block
