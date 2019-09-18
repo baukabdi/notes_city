@@ -32,7 +32,7 @@ p
   height: 100%
 
 .container
-  max-width: 960px
+  max-width: 60%
   margin: 0 auto
   padding-left: 1em
   padding-right: 1em
@@ -146,7 +146,7 @@ p
   transition: 1s ease
   position: fixed
   bottom: 5em
-  right: 3em
+  right: 0.5em
   z-index: 9
 
 .telephone
@@ -163,6 +163,9 @@ p
 	transition: background 0.2s ease
 	right: 4em
 	animation: hoverWave 2s infinite
+	position: relative
+	overflow: hidden
+	border: 1px solid $orange
 	&::before
 		content: ''
 		position: absolute
@@ -170,13 +173,14 @@ p
 		height: 100%
 		display: block
 		border-radius: 50%
-		border: 1px solid $orange
 		animation-name: wh-animate
 		animation-delay: 1s
 		animation-duration: 2s
 		animation-iteration-count: infinite
 	&:hover
-		background-color: #fff
+		span
+			width: 110%
+			height: 110%
 		svg
 				display: none
 	svg
@@ -186,15 +190,23 @@ p
 		animation: shake 3s infinite
 
 	span
-		display: block
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
 		position: absolute
 		top: 50%
 		left: 50%
 		transform: translate(-50%, -50%)
+		background-color: #fff
+		width: 0
+		height: 0
 		color: $orange
 		z-index: 0
 		text-align: center
 		font-weight: 700
+		transition: 0.3s ease
+		border-radius: 50%
 
 @keyframes hoverWave
 	0%
@@ -389,6 +401,45 @@ p
       img
         width: 100%
 
+    .what-you-get
+      position: absolute
+      background-color: rgba(#000, .7)
+      top: 9%
+      left: 11%
+      padding: 0.7em 2em 1.3em 2em
+      border-radius: 0.5em
+      text-transform: uppercase
+      &::before
+      	content: ''
+      	background-image: url('../images/triangle.png')
+      	background-repeat: no-repeat
+      	background-size: 100% 100%
+      	background-position: center center
+      	display: block
+      	position: absolute
+      	bottom: -30%
+      	left: 50%
+      	transform: translateX(-50%)
+      	width: 1.7em
+      	height: 1em
+
+      p
+       color: #fff
+       font-family: $muller-bold
+       font-size: 0.9em
+       font-weight: 400
+       letter-spacing: 0.2em
+
+      span
+      	position: absolute
+      	display: block
+      	bottom: 0.8em
+      	left: 50%
+      	transform: translateX(-50%)
+      	width: 80%
+      	background-color: $orange
+      	height: 0.2em
+
   .mouse
     position: absolute
     bottom: 9em
@@ -509,14 +560,14 @@ p
   top: 0
   left: 0
   width: 100%
-  padding: 3em
+  padding: 2.5em
   background-color: #f4ba18
   border-bottom-left-radius: 1em
   border-bottom-right-radius: 1em
   box-shadow: 2.237px 3.316px 7.68px 0.32px rgba(0, 0, 0, 0.18)
   z-index: 999
   transition: 1s ease
-  transform: translateY(-100%)
+  transform: translateY(-150%)
   .logo-white
     display: block
     margin-right: 3em
