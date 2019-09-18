@@ -22,16 +22,27 @@
     font-size: 10px !important; } }
 
 @media (max-width: 992px) {
+  .container {
+    max-width: 90% !important; }
+  .header .header-left {
+    width: 100%; }
   .header .header-right {
-    width: 60em; } }
+    display: none; } }
 
 @media (max-width: 768px) {
+  .header .header-content {
+    padding-bottom: 5em; }
+  .cupons .cupons_left,
+  .cupons .cupons_right {
+    width: 100%; }
+  .cupons .cupons_right {
+    margin-top: 2em; }
+    .cupons .cupons_right img {
+      margin: 0 auto; }
   .hamburger {
     display: block; }
   .header {
     height: auto; }
-    .header .header-right {
-      display: none; }
   .mouse {
     display: none; }
   .menu-static {
@@ -105,21 +116,21 @@
     margin-left: 0;
     margin-right: 0.2em; }
   .title {
-    font-size: 2em; } }
+    font-size: 1.9em; } }
 
 /************** Max END **************/
 /************** Min START **************/
 @media (min-width: 1400px) {
   body {
-    font-size: 14px !important; } }
+    font-size: 13px !important; } }
 
 @media (min-width: 1600px) {
   .header-content {
-    font-size: 16px !important; } }
+    font-size: 14px !important; } }
 
 @media (min-width: 1800px) {
   .header-content {
-    font-size: 18px !important; } }
+    font-size: 17px !important; } }
 
 @media (min-width: 2200px) {
   .header-content {
@@ -136,10 +147,6 @@
 @media (min-width: 3000px) {
   .header-content {
     font-size: 30px !important; } }
-
-@media (min-width: 3400px) {
-  .header-content {
-    font-size: 32px !important; } }
 
 @media (min-width: 3500px) {
   .header-content {

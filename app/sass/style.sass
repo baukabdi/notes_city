@@ -133,8 +133,7 @@ p
       height: 100%
       background-color: $orange
       z-index: -1
-.fancybox-slide--html .fancybox-close-small
-  width: 5em
+
 .fancybox-button svg
   color: #fff
   font-size: 2em
@@ -155,17 +154,16 @@ p
 	align-items: center
 	justify-content: center
 	box-shadow: 2.237px 3.316px 7.68px 0.32px rgba(0, 0, 0, 0.18)
-	background-color: $orange
+	background-color: $telephone-bg-text
 	width: 6em
 	height: 6em
 	border-radius: 50%
 	z-index: 9999
 	transition: background 0.2s ease
-	right: 4em
+	right: 1.5em
 	animation: hoverWave 2s infinite
 	position: relative
-	overflow: hidden
-	border: 1px solid $orange
+	overflow: hidden	
 	&::before
 		content: ''
 		position: absolute
@@ -201,7 +199,7 @@ p
 		background-color: #fff
 		width: 0
 		height: 0
-		color: $orange
+		color: $telephone-bg-text
 		z-index: 0
 		text-align: center
 		font-weight: 700
@@ -296,7 +294,7 @@ p
   .title
     margin-top: 2em
     color: #fff
-    width: 17em
+    max-width: 17em
     line-height: 1.9em
   .mhv
     font-family: $muller-heavy
@@ -826,6 +824,10 @@ p
     margin-top: 15em
     .features-content__left
       width: 50% !important
+    .features-content__right
+    	width: 48% !important
+    	h3
+    		margin-left: auto
     .bg-orange
       height: 21em
     .features__content-list
@@ -955,6 +957,7 @@ p
     display: flex
     justify-content: space-between
     align-items: center
+    flex-wrap: wrap
   .cupons_left
     width: 40%
 

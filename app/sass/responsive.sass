@@ -34,22 +34,34 @@
 
 
 @media (max-width: 992px)
+  .container
+    max-width: 90% !important
+
   .header
+    .header-left
+      width: 100%
     .header-right
-      width: 60em
+      display: none
 
 @media (max-width: 768px)
+  .header
+    .header-content
+      padding-bottom: 5em
 
-  // .container
-  //   max-width: 720px
+  .cupons
+    .cupons_left,
+    .cupons_right
+      width: 100%
+    .cupons_right
+      margin-top: 2em
+      img
+        margin: 0 auto
 
   .hamburger
     display: block
 
   .header
     height: auto
-    .header-right
-      display: none
 
   .mouse
     display: none
@@ -142,23 +154,23 @@
     margin-left: 0
     margin-right: 0.2em
   .title
-    font-size: 2em
+    font-size: 1.9em
 /************** Max END **************/
 
 /************** Min START **************/
 @media (min-width: 1400px)
   body
-    font-size: 14px !important
+    font-size: 13px !important
   // .container
   //   max-width: 1200px !important
 
 @media (min-width: 1600px)
   .header-content
-    font-size: 16px !important
+    font-size: 14px !important
 
 @media (min-width: 1800px)
   .header-content
-    font-size: 18px !important
+    font-size: 17px !important
 
 @media (min-width: 2200px)
   .header-content
@@ -175,10 +187,6 @@
 @media (min-width: 3000px)
   .header-content
     font-size: 30px !important
-
-@media (min-width: 3400px)
-  .header-content
-    font-size: 32px !important
 
 @media (min-width: 3500px)
   .header-content

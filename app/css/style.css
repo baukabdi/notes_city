@@ -165,9 +165,6 @@ p {
     background-color: #f4b91b;
     z-index: -1; }
 
-.fancybox-slide--html .fancybox-close-small {
-  width: 5em; }
-
 .fancybox-button svg {
   color: #fff;
   font-size: 2em; }
@@ -187,17 +184,16 @@ p {
   align-items: center;
   justify-content: center;
   box-shadow: 2.237px 3.316px 7.68px 0.32px rgba(0, 0, 0, 0.18);
-  background-color: #f4b91b;
+  background-color: #53514c;
   width: 6em;
   height: 6em;
   border-radius: 50%;
   z-index: 9999;
   transition: background 0.2s ease;
-  right: 4em;
+  right: 1.5em;
   animation: hoverWave 2s infinite;
   position: relative;
-  overflow: hidden;
-  border: 1px solid #f4b91b; }
+  overflow: hidden; }
   .telephone::before {
     content: '';
     position: absolute;
@@ -231,7 +227,7 @@ p {
     background-color: #fff;
     width: 0;
     height: 0;
-    color: #f4b91b;
+    color: #53514c;
     z-index: 0;
     text-align: center;
     font-weight: 700;
@@ -312,7 +308,7 @@ p {
   .header .title {
     margin-top: 2em;
     color: #fff;
-    width: 17em;
+    max-width: 17em;
     line-height: 1.9em; }
   .header .mhv {
     font-family: "MullerHeavy";
@@ -802,6 +798,10 @@ p {
     margin-top: 15em; }
     .features .features-content__catalog .features-content__left {
       width: 50% !important; }
+    .features .features-content__catalog .features-content__right {
+      width: 48% !important; }
+      .features .features-content__catalog .features-content__right h3 {
+        margin-left: auto; }
     .features .features-content__catalog .bg-orange {
       height: 21em; }
     .features .features-content__catalog .features__content-list ul {
@@ -923,7 +923,8 @@ p {
   .cupons .cupons__wrap {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    flex-wrap: wrap; }
   .cupons .cupons_left {
     width: 40%; }
   .cupons .cupons_right {
