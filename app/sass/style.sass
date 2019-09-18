@@ -66,72 +66,78 @@ p
 
 /********** Request form START **********/
 .request-form__wrap
-  background-color: #e8ab0e
-  padding: 2em
-  margin: 0 auto
-  left: 0
-  right: 0
-  position: absolute
-  top: 50%
-  transform: translateY(-50%)
-  z-index: 999
-  display: none
-  max-width: 26em
-  .request-form__logo
-    margin-bottom: 3em
-    img
-      width: 12em
-  .request-form__input
-    margin-bottom: 3em
-    border-bottom: 1px solid #fff
-    padding-bottom: 1em
-    input
-      width: 100%
+	background-color: #e8ab0e
+	padding: 2em
+	margin: 0 auto
+	left: 0
+	right: 0
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	z-index: 999
+	display: none
+	max-width: 26em
+	.request-form__logo
+		margin-bottom: 3em
+		img
+			width: 10em
+	.request-form__input
+		margin-bottom: 3em
+		border-bottom: 1px solid #fff
+		padding-bottom: 1em
+		input
+			width: 100%
+			color: #fff
+			background: none
+			border: none
+			font-size: 1.5em
+			&::-webkit-input-placeholder
+				color: #fff
+			&::-moz-input-placeholder
+				color: #fff
+		[placeholder]
+			color: #fff
+			opacity: 1
+			text-overflow: ellipsis
+
+.request-form__button
+  button
+    display: block
+    width: 100%
+    background-color: #fff
+    border-radius: 1em
+    padding: 1em 0
+    border: none
+    cursor: pointer
+    font-family: $evolventa-bold
+    letter-spacing: 0.2em
+    color: #4e4e4e
+    text-transform: uppercase
+    position: relative
+    z-index: 1
+    transition: 0.5s ease
+    overflow: hidden
+    &:hover
       color: #fff
-      background: none
-      border: none
-      font-size: 1.5em
-    [placeholder]
-      color: #fff
-      opacity: 1
-  .request-form__button
-    button
-      display: block
-      width: 100%
-      background-color: #fff
-      border-radius: 1em
-      padding: 1em 0
-      border: none
-      cursor: pointer
-      font-family: $evolventa-bold
-      letter-spacing: 0.2em
-      color: #4e4e4e
-      text-transform: uppercase
-      position: relative
-      z-index: 1
-      transition: 0.5s ease
-      overflow: hidden
-      &:hover
-        color: #fff
-        box-shadow: 3.914px 5.803px 14.72px 1.28px rgba(0, 0, 0, 0.25)
-        .overlay
-          width: 100%
+      box-shadow: 3.914px 5.803px 14.72px 1.28px rgba(0, 0, 0, 0.25)
       .overlay
-        transition: 0.5s ease
-        position: absolute
-        top: 0
-        left: 0
-        right: 0
-        margin: 0 auto
-        width: 0
-        height: 100%
-        background-color: $orange
-        z-index: -1
-  .fancybox-slide--html .fancybox-close-small
-    width: 5em
-  .fancybox-button svg
-    color: #fff
-    font-size: 2em
+        width: 100%
+    .overlay
+      transition: 0.5s ease
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      margin: 0 auto
+      width: 0
+      height: 100%
+      background-color: $orange
+      z-index: -1
+.fancybox-slide--html .fancybox-close-small
+  width: 5em
+.fancybox-button svg
+  color: #fff
+  font-size: 2em
 /********** Request form END **********/
 
 
@@ -144,37 +150,117 @@ p
   z-index: 9
 
 .telephone
-  display: flex
-  flex-direction: column
-  align-items: center
-  justify-content: center
-  box-shadow: 2.237px 3.316px 7.68px 0.32px rgba(0, 0, 0, 0.18)
-  background-color: $orange
-  width: 6em
-  height: 6em
-  border-radius: 50%
-  z-index: 9999
-  transition: background 0.2s ease
-  right: 4em
-  &::before
-   content: ''
-   position: absolute
-   width: 100%
-   height: 100%
-   display: block
-   border-radius: 50%
-   border: 1px solid $orange
-   animation-name: wh-animate
-   animation-delay: 1s
-   animation-duration: 2s
-   animation-iteration-count: infinite
-  &:hover
-    background-color: darken(#fff, 5)
-    svg
-    	fill: $orange
-  svg
-    width: 30%
-    fill: #fff
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	box-shadow: 2.237px 3.316px 7.68px 0.32px rgba(0, 0, 0, 0.18)
+	background-color: $orange
+	width: 6em
+	height: 6em
+	border-radius: 50%
+	z-index: 9999
+	transition: background 0.2s ease
+	right: 4em
+	animation: hoverWave 2s infinite
+	&::before
+		content: ''
+		position: absolute
+		width: 100%
+		height: 100%
+		display: block
+		border-radius: 50%
+		border: 1px solid $orange
+		animation-name: wh-animate
+		animation-delay: 1s
+		animation-duration: 2s
+		animation-iteration-count: infinite
+	&:hover
+		background-color: #fff
+		svg
+				display: none
+	svg
+		width: 30%
+		fill: #fff
+		z-index: 1
+		animation: shake 3s infinite
+
+	span
+		display: block
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		color: $orange
+		z-index: 0
+		text-align: center
+		font-weight: 700
+
+@keyframes hoverWave
+	0%
+		box-shadow: 0 8px 10px rgba($orange, 0.3), 0 0 0 0 rgba($orange, 0.2), 0 0 0 0 rgba(#fff, 0.2)
+	40%
+		box-shadow: 0 8px 10px rgba($orange, 0.3), 0 0 0 15px rgba($orange, 0.2), 0 0 0 0 rgba(#fff, 0.2)
+	80%
+		box-shadow: 0 8px 10px rgba($orange, 0.3), 0 0 0 30px rgba($orange, 0), 0 0 0 26.7px rgba(#fff, 0.1)
+	100%
+		box-shadow: 0 8px 10px rgba($orange, 0.3), 0 0 0 30px rgba($orange, 0), 0 0 0 40px rgba(#fff, 0)
+
+@keyframes shake
+  0%
+    transform: rotateZ(0deg)
+    -ms-transform: rotateZ(0deg)
+    -webkit-transform: rotateZ(0deg)
+
+  10%
+    transform: rotateZ(-30deg)
+    -ms-transform: rotateZ(-30deg)
+    -webkit-transform: rotateZ(-30deg)
+
+  20%
+    transform: rotateZ(15deg)
+    -ms-transform: rotateZ(15deg)
+    -webkit-transform: rotateZ(15deg)
+
+  30%
+    transform: rotateZ(-10deg)
+    -ms-transform: rotateZ(-10deg)
+    -webkit-transform: rotateZ(-10deg)
+
+  40%
+    transform: rotateZ(7.5deg)
+    -ms-transform: rotateZ(7.5deg)
+    -webkit-transform: rotateZ(7.5deg)
+
+  50%
+    transform: rotateZ(-6deg)
+    -ms-transform: rotateZ(-6deg)
+    -webkit-transform: rotateZ(-6deg)
+
+  60%
+    transform: rotateZ(5deg)
+    -ms-transform: rotateZ(5deg)
+    -webkit-transform: rotateZ(5deg)
+
+  70%
+    transform: rotateZ(-4.28571deg)
+    -ms-transform: rotateZ(-4.28571deg)
+    -webkit-transform: rotateZ(-4.28571deg)
+
+  80%
+    transform: rotateZ(3.75deg)
+    -ms-transform: rotateZ(3.75deg)
+    -webkit-transform: rotateZ(3.75deg)
+
+  90%
+    transform: rotateZ(-3.33333deg)
+    -ms-transform: rotateZ(-3.33333deg)
+    -webkit-transform: rotateZ(-3.33333deg)
+
+  100%
+    transform: rotateZ(0deg)
+    -ms-transform: rotateZ(0deg)
+    -webkit-transform: rotateZ(0deg)
 /********** Callback START **********/
 
 
@@ -184,11 +270,12 @@ p
   background-size: cover
   background-repeat: no-repeat
   padding-top: 2em
+  height: 100vh
 
   .header-content
     position: relative
     z-index: 1
-    padding-bottom: 14em
+    height: 100%
 
   .header-wrap
     z-index: 1
@@ -371,11 +458,11 @@ p
 .header-top
   .logo
     img
-      width: 16em
+      width: 14em
 
 .menu-static
   position: absolute
-  bottom: -10em
+  bottom: 3em
   top: auto
   width: 100%
   transition: 2s
@@ -422,7 +509,7 @@ p
   top: 0
   left: 0
   width: 100%
-  height: 7em
+  padding: 3em
   background-color: #f4ba18
   border-bottom-left-radius: 1em
   border-bottom-right-radius: 1em
@@ -434,7 +521,7 @@ p
     display: block
     margin-right: 3em
     img
-      width: 15em
+      width: 14em
   .menu-inner
     position: absolute
     left: 50%
