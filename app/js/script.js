@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+	AOS.init();
+
 	$('.phone_us').mask('+7 (000) 000-0000');
 
 	var $page = $('html, body');
