@@ -14,10 +14,26 @@
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/jquery-3.2.1.min.js"></script>
 </head>
 <body>
 
 <main class="main">
+
+  <script>
+    $(window).on('load', function() {
+      $('.preloader').fadeOut('fast');
+    });
+  </script>
+
+<div class="preloader">
+  <div class="preloader__item">
+    <img src="images/logo-white.png" alt="">
+    <div class="progress">
+      <div class="progress__circle"></div>
+    </div>
+  </div>
+</div>
 
 <div class="telephone__wrap" data-aos="zoom-in" data-aos-offset="100"  data-aos-delay="50" data-aos-duration="1000">
   <a href="#" class="telephone" data-fancybox="" data-src="#request-form__wrap">
@@ -523,7 +539,6 @@
 
 </main>
 
-<script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
 <script src="js/jquery.mask.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
