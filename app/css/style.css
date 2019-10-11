@@ -343,7 +343,8 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 2em;
-  height: 100vh; }
+  height: 100vh;
+  overflow: hidden; }
   .header .header-content {
     position: relative;
     z-index: 1;
@@ -452,12 +453,12 @@ p {
     top: -3em;
     width: 50%; }
     .header .header-right .girl img {
-      width: 100%; }
+      height: 60em; }
     .header .header-right .what-you-get {
       position: absolute;
       background-color: rgba(0, 0, 0, 0.7);
-      top: 9%;
-      left: 11%;
+      top: 13%;
+      left: 15%;
       padding: 0.7em 2em 1.3em 2em;
       border-radius: 0.5em;
       text-transform: uppercase; }
@@ -554,10 +555,12 @@ p {
 
 .menu-static {
   position: absolute;
-  bottom: 3em;
+  bottom: 0;
   top: auto;
   width: 100%;
-  transition: 2s; }
+  transition: 2s;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 2em 0; }
   .menu-static .logo-white {
     display: none; }
   .menu-static .menu-inner {
